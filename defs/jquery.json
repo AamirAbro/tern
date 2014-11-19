@@ -11,7 +11,7 @@
     }
   },
   "jQuery": {
-    "!type": "fn(selector: string, context: frameElement) -> jQuery.fn",
+    "!type": "fn(selector: string, context?: frameElement) -> jQuery.fn",
     "!url": "http://api.jquery.com/jquery/",
     "!doc": "Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.",
     "fn": {
@@ -103,12 +103,12 @@
       "blur": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/blur/",
-        "!doc": "Bind an event handler to the “blur” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'blur' JavaScript event, or trigger that event on an element."
       },
       "change": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/change/",
-        "!doc": "Bind an event handler to the “change” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'change' JavaScript event, or trigger that event on an element."
       },
       "children": {
         "!type": "fn(selector?: string) -> jQuery.fn",
@@ -118,7 +118,7 @@
       "click": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/click/",
-        "!doc": "Bind an event handler to the “click” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'click' JavaScript event, or trigger that event on an element."
       },
       "clone": {
         "!type": "fn(dataAndEvents?: bool, deep?: bool) -> jQuery.fn",
@@ -146,14 +146,14 @@
         "!doc": "Get the value of a style property for the first element in the set of matched elements or set one or more CSS properties for every matched element."
       },
       "data": {
-        "!type": "fn(key: string, value?: ?) -> $1",
+        "!type": "fn(key: string, value?: ?) -> !1",
         "!url": "http://api.jquery.com/data/",
         "!doc": "Store arbitrary data associated with the matched elements or return the value at the named data store for the first element in the set of matched elements."
       },
       "dblclick": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/dblclick/",
-        "!doc": "Bind an event handler to the “dblclick” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'dblclick' JavaScript event, or trigger that event on an element."
       },
       "delay": {
         "!type": "fn(duration: number, queue?: string) -> jQuery.fn",
@@ -203,7 +203,7 @@
       "error": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/error/",
-        "!doc": "Bind an event handler to the “error” JavaScript event."
+        "!doc": "Bind an event handler to the 'error' JavaScript event."
       },
       "fadeIn": {
         "!type": "fn(duration?: number, complete?: fn()) -> jQuery.fn",
@@ -228,7 +228,7 @@
       "filter": {
         "!type": "fn(selector: string) -> jQuery.fn",
         "!url": "http://api.jquery.com/filter/",
-        "!doc": "Reduce the set of matched elements to those that match the selector or pass the function’s test."
+        "!doc": "Reduce the set of matched elements to those that match the selector or pass the function's test."
       },
       "find": {
         "!type": "fn(selector: string) -> jQuery.fn",
@@ -248,12 +248,12 @@
       "focusin": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/focusin/",
-        "!doc": "Bind an event handler to the “focusin” event."
+        "!doc": "Bind an event handler to the 'focusin' event."
       },
       "focusout": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/focusout/",
-        "!doc": "Bind an event handler to the “focusout” JavaScript event."
+        "!doc": "Bind an event handler to the 'focusout' JavaScript event."
       },
       "get": {
         "!type": "fn(i: number) -> +Element",
@@ -328,17 +328,17 @@
       "keydown": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/keydown/",
-        "!doc": "Bind an event handler to the “keydown” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'keydown' JavaScript event, or trigger that event on an element."
       },
       "keypress": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/keypress/",
-        "!doc": "Bind an event handler to the “keypress” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'keypress' JavaScript event, or trigger that event on an element."
       },
       "keyup": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/keyup/",
-        "!doc": "Bind an event handler to the “keyup” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'keyup' JavaScript event, or trigger that event on an element."
       },
       "last": {
         "!type": "fn() -> jQuery.fn",
@@ -368,7 +368,7 @@
       "mousedown": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/mousedown/",
-        "!doc": "Bind an event handler to the “mousedown” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'mousedown' JavaScript event, or trigger that event on an element."
       },
       "mouseenter": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
@@ -383,22 +383,22 @@
       "mousemove": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/mousemouve/",
-        "!doc": "Bind an event handler to the “mousemove” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'mousemove' JavaScript event, or trigger that event on an element."
       },
       "mouseout": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/mouseout/",
-        "!doc": "Bind an event handler to the “mouseout” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'mouseout' JavaScript event, or trigger that event on an element."
       },
       "mouseover": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/mouseover/",
-        "!doc": "Bind an event handler to the “mouseover” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'mouseover' JavaScript event, or trigger that event on an element."
       },
       "mouseup": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/mouseup/",
-        "!doc": "Bind an event handler to the “mouseup” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'mouseup' JavaScript event, or trigger that event on an element."
       },
       "next": {
         "!type": "fn(selector?: string) -> jQuery.fn",
@@ -436,7 +436,7 @@
         "!doc": "Get the closest ancestor element that is positioned."
       },
       "on": {
-        "!type": "fn(events: string, selector?: string, data?: ?, handler: fn(+jQuery.Event)) -> jQuery.fn",
+        "!type": "fn(events: string, handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/on/",
         "!doc": "Attach an event handler function for one or more events to the selected elements."
       },
@@ -448,7 +448,7 @@
       "outerHeight": {
         "!type": "fn(includeMargin?: bool) -> number",
         "!url": "http://api.jquery.com/outerHeight/",
-        "!doc": "Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin. Returns an integer (without “px”) representation of the value or null if called on an empty set of elements."
+        "!doc": "Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin. Returns an integer (without 'px') representation of the value or null if called on an empty set of elements."
       },
       "outerWidth": {
         "!type": "fn(includeMargin?: bool) -> number",
@@ -501,7 +501,7 @@
         "!doc": "Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object."
       },
       "promise": {
-        "!type": "fn(type?: string, target: ?) -> +jQuery.Deferred",
+        "!type": "fn(type?: string, target: ?) -> +jQuery.Promise",
         "!url": "http://api.jquery.com/promise/",
         "!doc": "Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished."
       },
@@ -563,12 +563,12 @@
       "resize": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/resize/",
-        "!doc": "Bind an event handler to the “resize” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'resize' JavaScript event, or trigger that event on an element."
       },
       "scroll": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/scroll/",
-        "!doc": "Bind an event handler to the “scroll” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'scroll' JavaScript event, or trigger that event on an element."
       },
       "scrollLeft": {
         "!type": "number",
@@ -583,7 +583,7 @@
       "select": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/select/",
-        "!doc": "Bind an event handler to the “select” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'select' JavaScript event, or trigger that event on an element."
       },
       "selector": {
         "!type": "string",
@@ -643,7 +643,7 @@
       "submit": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/submit/",
-        "!doc": "Bind an event handler to the “submit” JavaScript event, or trigger that event on an element."
+        "!doc": "Bind an event handler to the 'submit' JavaScript event, or trigger that event on an element."
       },
       "text": {
         "!type": "fn() -> string",
@@ -663,7 +663,7 @@
       "toggleClass": {
         "!type": "fn(className: string) -> jQuery.fn",
         "!url": "http://api.jquery.com/toggleClass/",
-        "!doc": "Add or remove one or more classes from each element in the set of matched elements, depending on either the class’s presence or the value of the switch argument."
+        "!doc": "Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument."
       },
       "trigger": {
         "!type": "fn(eventType: string, params: ?) -> jQuery.fn",
@@ -688,7 +688,7 @@
       "unload": {
         "!type": "fn(handler: fn(+jQuery.Event)) -> jQuery.fn",
         "!url": "http://api.jquery.com/unload/",
-        "!doc": "Bind an event handler to the “unload” JavaScript event."
+        "!doc": "Bind an event handler to the 'unload' JavaScript event."
       },
       "unwrap": {
         "!type": "fn() -> jQuery.fn",
@@ -718,7 +718,7 @@
       "wrapInner": {
         "!type": "fn(wrappingElement: ?) -> jQuery.fn",
         "!url": "http://api.jquery.com/wrapInner/",
-        "doc": "Wrap an HTML structure around the content of each element in the set of matched elements."
+        "!doc": "Wrap an HTML structure around the content of each element in the set of matched elements."
       },
 
       "slice": {
@@ -743,7 +743,7 @@
       }
     },
     "ajax": {
-      "!type": "fn(url: string, settings: ?) -> +XMLHttpRequest",
+      "!type": "fn(url: string, settings: ?) -> +jQuery.jqXHR",
       "!url": "http://api.jquery.com/jquery.ajax/",
       "!doc": "Perform an asynchronous HTTP (Ajax) request."
     },
@@ -762,10 +762,67 @@
       "!url": "http://api.jquery.com/jquery.ajaxTransport/",
       "!doc": "Creates an object that handles the actual transmission of Ajax data."
     },
-    "callbacks": {
-      "!type": "fn(flags: string) -> ?",
-      "!url": "http://api.jquery.com/jquery.callbacks/",
-      "!doc": "A multi-purpose callbacks list object that provides a powerful way to manage callback lists."
+    "Callbacks": {
+      "!type": "fn(flags: string) -> +jQuery.Callbacks",
+      "!url": "http://api.jquery.com/jquery.Callbacks/",
+      "!doc": "A multi-purpose callbacks list object that provides a powerful way to manage callback lists.",
+      "prototype": {
+        "add":{
+          "!type": "fn(callbacks: ?) -> +jQuery.Callbacks",
+          "!url": "http://api.jquery.com/callbacks.add/",
+          "!doc": "Add a callback or a collection of callbacks to a callback list."
+        },
+        "disable":{
+          "!type": "fn() -> +jQuery.Callbacks",
+          "!url": "http://api.jquery.com/callbacks.disable/",
+          "!doc": "Disable a callback list from doing anything more."
+        },
+        "disabled":{
+          "!type": "fn() -> bool",
+          "!url": "http://api.jquery.com/callbacks.disabled/",
+          "!doc": "Determine if the callbacks list has been disabled."
+        },
+        "empty":{
+          "!type": "fn() -> +jQuery.Callbacks",
+          "!url": "http://api.jquery.com/callbacks.empty/",
+          "!doc": "Remove all of the callbacks from a list."
+        },
+        "fire":{
+          "!type": "fn(arguments: ?) -> +jQuery.Callbacks",
+          "!url": "http://api.jquery.com/callbacks.fire/",
+          "!doc": "Call all of the callbacks with the given arguments"
+        },
+        "fired":{
+          "!type": "fn() -> bool",
+          "!url": "http://api.jquery.com/callbacks.fired/",
+          "!doc": "Determine if the callbacks have already been called at least once."
+        },
+        "fireWith":{
+          "!type": "fn(context?: ?, args?: ?) -> +jQuery.Callbacks",
+          "!url": "http://api.jquery.com/callbacks.fireWith/",
+          "!doc": "Call all callbacks in a list with the given context and arguments."
+        },
+        "has":{
+          "!type": "fn(callback: fn()) -> bool",
+          "!url": "http://api.jquery.com/callbacks.has/",
+          "!doc": "Determine whether a supplied callback is in a list."
+        },
+        "lock":{
+          "!type": "fn() -> +jQuery.Callbacks",
+          "!url": "http://api.jquery.com/callbacks.lock/",
+          "!doc": "Lock a callback list in its current state."
+        },
+        "locked":{
+          "!type": "fn() -> bool",
+          "!url": "http://api.jquery.com/callbacks.locked/",
+          "!doc": "Determine if the callbacks list has been locked."
+        },
+        "remove":{
+          "!type": "fn(callbacks: ?) -> +jQuery.Callbacks",
+          "!url": "http://api.jquery.com/callbacks.remove/",
+          "!doc": "Remove a callback or a collection of callbacks from a callback list."
+        }
+      }
     },
     "contains": {
       "!type": "fn(container: +Element, contained: +Element) -> bool",
@@ -773,16 +830,19 @@
       "!doc": "Check to see if a DOM element is a descendant of another DOM element."
     },
     "cssHooks": {
-      "!type": "{}",
+      "!type": "?",
       "!url": "http://api.jquery.com/cssHooks/",
       "!doc": "Hook directly into jQuery to override how particular CSS properties are retrieved or set, normalize CSS property naming, or create custom properties."
     },
     "data": {
-      "!type": "fn(element: +Element, key: string, value: ?) -> $2",
+      "!type": "fn(element: +Element, key: string, value: ?) -> !2",
       "!url": "http://api.jquery.com/jquery.data/",
       "!doc": "Store arbitrary data associated with the specified element and/or return the value that was set."
     },
     "Event": {
+      "!type": "fn(type: ?, props?: ?) -> +jQuery.Event",
+      "!url": "http://api.jquery.com/category/events/event-object/",
+      "!doc": "The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.",
       "prototype": {
         "currentTarget":{
           "!type": "+Element",
@@ -882,6 +942,9 @@
       }
     },
     "Deferred": {
+      "!type": "fn(beforeStart?: fn(deferred: +jQuery.Deferred)) -> +jQuery.Deferred",
+      "!url": "http://api.jquery.com/jQuery.Deferred/",
+      "!doc": "A constructor function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.",
       "prototype": {
         "always":{
           "!type": "fn(callback: fn()) -> +jQuery.Deferred",
@@ -919,7 +982,7 @@
           "!doc": "Call the progressCallbacks on a Deferred object with the given context and args."
         },
         "pipe":{
-          "!type": "fn(doneFilter?: fn(), failFilter?: fn()) -> +jQuery.Deferred",
+          "!type": "fn(doneFilter?: fn(), failFilter?: fn()) -> +jQuery.Promise",
           "!url": "http://api.jquery.com/deferred.pipe/",
           "!doc": "Utility method to filter and/or chain Deferreds."
         },
@@ -929,9 +992,9 @@
           "!doc": "Add handlers to be called when the Deferred object generates progress notifications."
         },
         "promise":{
-          "!type": "fn(target: ?) -> +jQuery.Deferred",
+          "!type": "fn(target: ?) -> +jQuery.Promise",
           "!url": "http://api.jquery.com/deferred.promise/",
-          "!doc": "Return a Deferred’s Promise object."
+          "!doc": "Return a Deferred's Promise object."
         },
         "reject":{
           "!type": "fn(args?: ?) -> +jQuery.Deferred",
@@ -959,28 +1022,65 @@
           "!doc": "Determine the current state of a Deferred object."
         },
         "then":{
-          "!type": "fn(doneFilter: fn(), failFilter?: fn(), progressFilter?: fn()) -> +jQuery.Deferred",
+          "!type": "fn(doneFilter: fn(), failFilter?: fn(), progressFilter?: fn()) -> +jQuery.Promise",
           "!url": "http://api.jquery.com/deferred.then/",
           "!doc": "Add handlers to be called when the Deferred object is resolved, rejected, or still in progress."
         }
       }
     },
-    "Promise": "jQuery.Deferred",
+    "Promise": {
+      "!url": "http://api.jquery.com/jQuery.Deferred/",
+      "!doc": "A constructor function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.",
+      "prototype": {
+        "always": "fn(callback: fn()) -> +jQuery.Promise",
+        "done": "fn(callback: fn()) -> +jQuery.Promise",
+        "fail": "fn(callback: fn()) -> +jQuery.Promise",
+        "isRejected": "fn() -> bool",
+        "isResolved": "fn() -> bool",
+        "pipe": "fn(doneFilter?: fn(), failFilter?: fn()) -> +jQuery.Promise",
+        "promise": "fn(target: ?) -> +jQuery.Deferred",
+        "state": "fn() -> string",
+        "then": "fn(doneFilter: fn(), failFilter?: fn(), progressFilter?: fn()) -> +jQuery.Promise"
+      }
+    },
+    "jqXHR": {
+      "prototype": {
+        "always": "fn(callback: fn()) -> +jQuery.jqXHR",
+        "done": "fn(callback: fn()) -> +jQuery.jqXHR",
+        "fail": "fn(callback: fn()) -> +jQuery.jqXHR",
+        "isRejected": "fn() -> bool",
+        "isResolved": "fn() -> bool",
+        "pipe": "fn(doneFilter?: fn(), failFilter?: fn()) -> +jQuery.Promise",
+        "promise": "fn(target: ?) -> +jQuery.Promise",
+        "state": "fn() -> string",
+        "then": "fn(doneFilter: fn(), failFilter?: fn(), progressFilter?: fn()) -> +jQuery.Promise",
+        "readyState": "number",
+        "status": "number",
+        "statusText": "string",
+        "resoponseText": "string",
+        "resoponseXML": "string",
+        "setRequestHeader": "fn(name: string, val: string)",
+        "getAllResponseHeader": "fn() ->",
+        "getResponseHeader": "fn() ->",
+        "statusCode": "fn() -> number",
+        "abort": "fn()"
+      }
+    },
     "dequeue": {
         "!type": "fn(queue?: string) -> jQuery.fn",
         "!url": "http://api.jquery.com/jQuery.dequeue/",
         "!doc": "Execute the next function on the queue for the matched elements."
     },
     "each": {
-      "!type": "fn(collection: ?, callback: fn(i: number, elt: ?)) -> $0",
-      "!effects": ["call $1 number $0.<i>"],
+      "!type": "fn(collection: ?, callback: fn(i: number, elt: ?)) -> !0",
+      "!effects": ["call !1 number !0.<i>"],
       "!url": "http://api.jquery.com/jQuery.each/",
       "!doc": "A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties."
     },
     "error": "fn(message: string)",
     "extend": {
-      "!type": "fn(target: ?, source: ?) -> $0",
-      "!effects": ["copy $1 $0"]
+      "!type": "fn(target: ?, source: ?) -> !0",
+      "!effects": ["copy !1 !0"]
     },
     "fx": {
       "!type": "fn(elem: +Element, options: ?, prop: string, end?: number, easing?: bool)",
@@ -1004,17 +1104,17 @@
       "start": "fn()"
     },
     "get":{
-      "!type": "fn(url: string, data?: ?, success: fn(data: string, textStatus: string, req: +XMLHttpRequest), dataType?: string) -> +XMLHttpRequest",
+      "!type": "fn(url: string, data?: ?, success: fn(data: string, textStatus: string, req: +XMLHttpRequest), dataType?: string) -> +jQuery.jqXHR",
       "!url": "http://api.jquery.com/jquery.get/",
       "!doc": "Load data from the server using a HTTP GET request."
     },
     "getJSON": {
-      "!type": "fn(url: string, data?: ?, success: fn(data: ?, textStatus: string, req: +XMLHttpRequest)) -> +XMLHttpRequest",
+      "!type": "fn(url: string, data?: ?, success: fn(data: ?, textStatus: string, req: +XMLHttpRequest)) -> +jQuery.jqXHR",
       "!url": "http://api.jquery.com/jquery.getJSON/",
       "!doc": "Load JSON-encoded data from the server using a GET HTTP request."
     },
     "getScript": {
-      "!type": "fn(url: string, success?: fn(script: string, textStatus: string, req: +XMLHttpRequest)) -> +XMLHttpRequest",
+      "!type": "fn(url: string, success?: fn(script: string, textStatus: string, req: +XMLHttpRequest)) -> +jQuery.jqXHR",
       "!url": "http://api.jquery.com/jquery.getScript/",
       "!doc": "Load a JavaScript file from the server using a GET HTTP request, then execute it."
     },
@@ -1024,8 +1124,8 @@
       "!doc": "Execute some JavaScript code globally."
     },
     "grep": {
-      "!type": "fn(array: [?], filter: fn(elt: ?, i: number), invert?: bool) -> $0",
-      "!effects": ["call $1 $0.<i> number"],
+      "!type": "fn(array: [?], filter: fn(elt: ?, i: number), invert?: bool) -> !0",
+      "!effects": ["call !1 !0.<i> number"],
       "!url":"http://api.jquery.com/jquery.grep/",
       "!doc":"Finds the elements of an array which satisfy a filter function. The original array is not affected."
     },
@@ -1067,7 +1167,7 @@
     "isPlainObject": {
       "!type": "fn(obj: ?) -> bool",
       "!url": "http://api.jquery.com/jquery.isPlainObject/",
-      "!doc": "Check to see if an object is a plain object (created using “{}” or “new Object”)."
+      "!doc": "Check to see if an object is a plain object (created using '{}' or 'new Object')."
     },
     "isWindow": {
       "!type": "fn(obj: ?) -> bool",
@@ -1085,18 +1185,18 @@
       "!doc": ""
     },
     "makeArray": {
-      "!type": "fn(obj: ?) -> [$0.<i>]",
+      "!type": "fn(obj: ?) -> [!0.<i>]",
       "!url": "http://api.jquery.com/jquery.makeArray/",
       "!doc": "Convert an array-like object into a true JavaScript array."
     },
     "map": {
-      "!type": "fn(array: [?], callback: fn(element: ?, i: number) -> ?) -> [$1.$ret]",
-      "!effects": ["call $1 $0.<i> number"],
+      "!type": "fn(array: [?], callback: fn(element: ?, i: number) -> ?) -> [!1.!ret]",
+      "!effects": ["call !1 !0.<i> number"],
       "!url": "http://api.jquery.com/jquery.map/",
       "!doc": "Translate all items in an array or object to new array of items."
     },
     "merge": {
-      "!type": "fn(first: [?], second: [?]) -> $0",
+      "!type": "fn(first: [?], second: [?]) -> !0",
       "!url": "http://api.jquery.com/jquery.merge/",
       "!doc": "Merge the contents of two arrays together into the first array."
     },
@@ -1131,12 +1231,12 @@
       "!doc": "Takes a well-formed JSON string and returns the resulting JavaScript object."
     },
     "parseXML": {
-      "!type": "fn(xml: string) -> XMLDocument",
+      "!type": "fn(xml: string) -> +XMLDocument",
       "!url": "http://api.jquery.com/jquery.parseXML/",
       "!doc": "Parses a string into an XML document."
     },
     "post": {
-      "!type": "fn(url: string, data?: ?, success: fn(data: string, textStatus: string, req: +XMLHttpRequest), dataType?: string) -> +XMLHttpRequest",
+      "!type": "fn(url: string, data?: ?, success: fn(data: string, textStatus: string, req: +XMLHttpRequest), dataType?: string) -> +jQuery.jqXHR",
       "!url": "http://api.jquery.com/jquery.post/",
       "!doc": "Load data from the server using a HTTP POST request."
     },
@@ -1162,7 +1262,7 @@
     },
     "support": {
       "!url": "http://api.jquery.com/jquery.support/",
-      "!doc": "A collection of properties that represent the presence of different browser features or bugs. Primarily intended for jQuery’s internal use; specific properties may be removed when they are no longer needed internally to improve page startup performance.",
+      "!doc": "A collection of properties that represent the presence of different browser features or bugs. Primarily intended for jQuery's internal use; specific properties may be removed when they are no longer needed internally to improve page startup performance.",
       "getSetAttribute": "bool",
       "leadingWhitespace": "bool",
       "tbody": "bool",
@@ -1207,12 +1307,12 @@
       "!doc": "Determine the internal JavaScript [[Class]] of an object."
     },
     "unique": {
-      "!type": "fn(array: [?]) -> $0",
+      "!type": "fn(array: [?]) -> !0",
       "!url": "http://api.jquery.com/jquery.unique/",
       "!doc": "Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers."
     },
     "when": {
-      "!type": "fn(deferred: +jQuery.Deferred) -> +jQuery.Deferred",
+      "!type": "fn(deferred: +jQuery.Deferred) -> +jQuery.Promise",
       "!url": "http://api.jquery.com/jquery.when/",
       "!doc": "Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events."
     }
